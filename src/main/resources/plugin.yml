@@ -1,4 +1,4 @@
-name: SpigotCracker
+name: A
 main: dank.memes.spigotcracker.SpigotCrackerPlugin
 version: ${project.version}
 author: vemacs

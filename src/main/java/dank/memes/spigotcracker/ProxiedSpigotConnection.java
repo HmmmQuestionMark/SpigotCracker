@@ -38,7 +38,7 @@ public class ProxiedSpigotConnection extends HttpURLConnection {
 
     @Override
     public InputStream getInputStream() throws IOException {
-        SpigotCrackerPlugin.instance.getLogger().info("Intercepted " + getURL().toString());
+        System.out.println("[SpigotCracker] Intercepted " + getURL().toString()); // No instance, logger dead
         if (inputStream == null) {
             outClosed = true;
             responseCode = HTTP_OK;

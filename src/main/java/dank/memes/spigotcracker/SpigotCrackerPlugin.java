@@ -6,13 +6,10 @@ import java.lang.reflect.Field;
 import java.net.URL;
 
 public class SpigotCrackerPlugin extends JavaPlugin {
-    public static SpigotCrackerPlugin instance;
-
-    @Override
-    public void onLoad() {
-        instance = this;
+    static {
         unsetURLStreamHandlerFactory();
-        getLogger().info("All requests to SpigotMC's resources API will be intercepted.");
+        // No instance, logger dead
+        System.out.println("[SpigotCracker] All requests to SpigotMC's resources API will be intercepted.");
         URL.setURLStreamHandlerFactory(new InterceptedStreamHandlerFactory());
     }
 
