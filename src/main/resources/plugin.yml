@@ -1,0 +1,5 @@
+name: SpigotCracker
+main: dank.memes.spigotcracker.SpigotCrackerPlugin
+version: ${project.version}
+author: vemacs
+load: STARTUP
